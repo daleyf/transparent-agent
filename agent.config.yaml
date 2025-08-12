@@ -1,0 +1,14 @@
+model: ${MODEL}
+temperature: 0.2
+seed: 42
+timeout_s: 120
+sandbox_dir: ".sandbox"
+out_dir: "out"
+persist_logs: true
+redact_secrets: true
+redact_keys:
+  - OPENAI_API_KEY
+  - API_KEY
+  - SECRET
+tools:
+  - fs
